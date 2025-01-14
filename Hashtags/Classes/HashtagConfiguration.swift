@@ -5,6 +5,7 @@
 //  Created by Oscar Götting on 6/10/18.
 //
 import Foundation
+import UIKit
 
 open class HashtagConfiguration {
     var paddingLeft: CGFloat = 0.0
