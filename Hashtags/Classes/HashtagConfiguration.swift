@@ -4,7 +4,6 @@
 //
 //  Created by Oscar Götting on 6/10/18.
 //
-
 import Foundation
 
 open class HashtagConfiguration {
@@ -18,4 +17,11 @@ open class HashtagConfiguration {
     var textSize: CGFloat = 0.0
     var textColor = UIColor()
     var backgroundColor = UIColor()
+    var deSelectedTextFont = UIFont.init(name: "NotoSansCJKkr-Regular", size: 14.0)
+    var selectedTextFont = UIFont.init(name: "NotoSansCJKkr-Medium", size: 14.0)
+    var maxLine = 0
+    var removeImage : UIImage?
+    var isSelectable = true;
+    var borderColor = UIColor()
+    var borderWidth: CGFloat = 0.0
 }

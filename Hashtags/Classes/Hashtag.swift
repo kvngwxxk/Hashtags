@@ -5,7 +5,6 @@
 //  Created by Oscar Götting on 6/6/18.
 //  Copyright © 2018 Oscar Götting. All rights reserved.
 //
-
 import Foundation
 
 extension Array where Element: Equatable {
@@ -34,6 +33,8 @@ open class HashTag: Equatable {
     open var isRemovable: Bool
     open var hasHashSymbol: Bool
     open var configuration: HashtagConfiguration?
+    open var isSelected : Bool = false
+    open var idx : String = "0";
     
     public init(word: String, withHashSymbol: Bool = true, isRemovable: Bool = false) {
         self.text = word

@@ -92,6 +92,7 @@ open class RemovableHashtagCollectionViewCell: UICollectionViewCell {
         self.removeButton.centerYAnchor.constraint(equalTo: self.wordLabel.centerYAnchor).isActive = true
         // Remove button target
         self.removeButton.addTarget(self, action: Selector.removeButtonClicked, for: .touchUpInside)
+        self.bringSubviewToFront(removeButton)
     }
     
     open override func prepareForInterfaceBuilder() {
@@ -121,6 +122,8 @@ extension RemovableHashtagCollectionViewCell {
         
         self.layer.cornerRadius = configuration.cornerRadius
         self.backgroundColor = configuration.backgroundColor
+        self.layer.borderWidth = configuration.borderWidth
+        self.layer.borderColor = configuration.borderColor.cgColor
         
         self.wordLabel.textColor = configuration.textColor
         self.wordLabel.font = UIFont.systemFont(ofSize: configuration.textSize)
