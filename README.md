@@ -12,6 +12,7 @@
 
 
 This version is for SPM. And some files are also customized.
+
 Hashtags is an iOS library for displaying, customizing and interacting with a list of #hashtags, written in Swift
 
 ## :star: Features
