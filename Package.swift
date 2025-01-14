@@ -12,9 +12,15 @@ let package = Package(
             targets: ["Hashtags"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/mischa-hildebrand/AlignedCollectionViewFlowLayout.git", from: "1.1.2") // 버전은 필요에 따라 조정
+    ],
     targets: [
         .target(
             name: "Hashtags",
+            dependencies: [
+                .product(name: "AlignedCollectionViewFlowLayout", package: "AlignedCollectionViewFlowLayout")
+            ],
             path: "Hashtags" // 소스 디렉토리 경로
         )
     ]
