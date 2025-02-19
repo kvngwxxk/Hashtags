@@ -22,9 +22,12 @@ let package = Package(
             dependencies: [
                 .product(name: "AlignedCollectionViewFlowLayout", package: "AlignedCollectionViewFlowLayout")
             ],
-            path: "Hashtags", // 소스 디렉토리 경로
+            path: "Hashtags",
+            // 소스 파일들이 있는 폴더를 명시합니다.
+            sources: ["Classes"],
+            // 리소스(Assets 폴더)를 포함시킵니다.
             resources: [
-                .process("Assets") // Assets 폴더 내의 리소스를 번들에 포함시킴
+                .process("Assets")
             ]
         )
     ]
