@@ -39,7 +39,8 @@ open class RemovableHashtagCollectionViewCell: UICollectionViewCell {
     
     var removeButton : UIButton = {
         let btn = UIButton()
-        let bundle = Bundle(for: RemovableHashtagCollectionViewCell.self)
+        // let bundle = Bundle(for: RemovableHashtagCollectionViewCell.self)
+        let bundle = Bundle.module
         let removeIcon = UIImage(named: "close", in: bundle, compatibleWith: nil) ?? UIImage()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setImage(removeIcon, for: .normal)
