@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/kvngwxxk/AlignedCollectionViewFlowLayout.git", branch: "master")
+        .package(url: "https://github.com/kvngwxxk/AlignedCollectionViewFlowLayout.git", from: "1.0.0")
 
     ],
     targets: [
